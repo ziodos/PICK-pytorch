@@ -29,7 +29,7 @@ IOBTagsField.vocab = iob_labels_vocab_cls
 
 class Document:
     def __init__(self, boxes_and_transcripts_file: Path, image_file: Path,
-                 resized_image_size: Tuple[int, int] = (480, 960),
+                 resized_image_size: Tuple[int, int] = (952, 966),
                  iob_tagging_type: str = 'box_level', entities_file: Path = None, training: bool = True,
                  image_index=None):
         '''
@@ -151,7 +151,7 @@ class Document:
                     # perform exactly tagging within specific box, box_level_entities parames will perform boex level tagging.
                     iob_tags_label = text2iob_label_with_box_and_within_box_exactly_level(box_entity_types[:boxes_num],
                                                                                           transcripts[:boxes_num],
-                                                                                          entities, ['address'])
+                                                                                          entities, ['adresse','nom_fourniseeur', 'methode_payement'])
 
                 iob_tags_label = IOBTagsField.process(iob_tags_label)[:, :transcript_len].numpy()
                 box_entity_types = [entities_vocab_cls.stoi[t] for t in box_entity_types[:boxes_num]]
