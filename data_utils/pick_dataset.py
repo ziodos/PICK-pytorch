@@ -27,7 +27,7 @@ class PICKDataset(Dataset):
                  images_folder: str = 'images',
                  entities_folder: str = 'entities',
                  iob_tagging_type: str = 'box_and_within_box_level',
-                 resized_image_size: Tuple[int, int] = (480, 960),
+                 resized_image_size: Tuple[int, int] = (952, 966),
                  keep_ratio: bool = True,
                  ignore_error: bool = False,
                  training: bool = True
