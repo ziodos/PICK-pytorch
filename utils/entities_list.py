@@ -3,10 +3,17 @@
 # @Created Time: 7/8/2020 9:34 PM
 
 Entities_list = [
-    "company",
-    "address",
-    "date",
-    "total"
+    "date_echeance",
+    "date_facture",
+    "methode_payement",
+    "numero_facture",
+    "rib",
+    "adresse",
+    "contact",
+    "nom_fournisseur",
+    "matricule_fiscale",
+    "total_ht",
+    "total_ttc"
 ]
 
 # Entities_list = [
