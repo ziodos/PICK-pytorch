@@ -57,24 +57,24 @@
     "train_dataset": {
         "type": "PICKDataset",
         "args": {
-            "files_name":"/home/Wen/data/code/PICK/PICK-pytorch/data/data_examples_root/train_samples_list.csv",
+            "files_name":"/content/PICK-pytorch/data/data_examples_root/train_samples_list.csv",
             "boxes_and_transcripts_folder":"boxes_and_transcripts",
             "images_folder":"images",
             "entities_folder":"entities",
             "iob_tagging_type":"box_and_within_box_level",
-            "resized_image_size": [480, 960],
+            "resized_image_size": [952, 966],
             "ignore_error": false
         }
     },
     "validation_dataset": {
         "type": "PICKDataset",
         "args": {
-            "files_name":"/home/Wen/data/code/PICK/PICK-pytorch/data/data_examples_root/train_samples_list.csv",
+            "files_name":"/content/PICK-pytorch/data/test_data_example/test_samples_list.csv",
             "boxes_and_transcripts_folder":"boxes_and_transcripts",
             "images_folder":"images",
             "entities_folder":"entities",
             "iob_tagging_type":"box_and_within_box_level",
-            "resized_image_size": [480, 960],
+            "resized_image_size": [952, 966],
             "ignore_error": false
         }
     },
