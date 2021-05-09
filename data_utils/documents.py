@@ -16,7 +16,7 @@ import numpy as np
 from utils.entities_list import Entities_list
 from utils.class_utils import keys_vocab_cls, iob_labels_vocab_cls, entities_vocab_cls
 
-MAX_BOXES_NUM = 70  # limit max number boxes of every documents
+MAX_BOXES_NUM = 120  # limit max number boxes of every documents
 MAX_TRANSCRIPT_LEN = 50  # limit max length text of every box
 
 # text string label converter
